@@ -1,0 +1,39 @@
+.label-header{
+    font-weight: 300;
+    text-align: center;
+    
+}
+.list-container {
+    list-style-type:none;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    text-align: center;
+    color: #037741;
+    font-weight: 350;
+    height: 15px;
+    align-items: center;
+    
+}
+.list-container :hover{
+    color:white;
+
+}
+
+.header{
+    background-color: #f1c6e5;
+    font-family: 'Source Sans Pro Topnav', sans-serif;
+    
+    
+}
+.footer{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.addEmployee{
+    width: 100%;
+}
+.edit-Image, .delete-icon{
+    cursor: pointer;
+}
