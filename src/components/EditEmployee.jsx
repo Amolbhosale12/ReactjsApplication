@@ -127,12 +127,11 @@ const EditEmployee = () => {
 
   return (
     <div className="container my-5 d-flex justify-content-center">
-      <div className="col-12 col-md-7 d-flex flex-column gap-3 border p-5 rounded-4">
-        <div>
-          <label htmlFor="" className="bg-info rounded p-2 addEmployee">
-            Update/Edit Employee
-          </label>
+      <div className="col-12 col-md-7 d-flex flex-column gap-3  p-5 rounded-4 edit-container">
+        <div className="text-center label-header">
+          <label className="container-label my-2">Update Empployee</label>
         </div>
+
         <div className="form-floating">
           <input
             type="text"
@@ -196,21 +195,20 @@ const EditEmployee = () => {
 
         <div className="d-flex  justify-content-center gap-3">
           <button
+            className="btn btn-primary"
+            onClick={(e) => {
+              UpdateData(e);
+            }}
+          >
+            Update Employee
+          </button>
+          <button
             className="btn btn-danger"
             onClick={() => {
               window.history.back();
             }}
           >
             Back
-          </button>
-
-          <button
-            className="btn btn-primary"
-            onClick={(e) => {
-              UpdateData(e);
-            }}
-          >
-            Upate
           </button>
         </div>
       </div>

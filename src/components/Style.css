@@ -1,39 +1,54 @@
-.label-header{
-    font-weight: 300;
-    text-align: center;
-    
+.label-header {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.container-label {
+  border-left: 10px solid tomato;
+  padding-left: 5px;
 }
 .list-container {
-    list-style-type:none;
-    align-items: center;
-    gap: 40px;
-    cursor: pointer;
-    text-align: center;
-    color: #037741;
-    font-weight: 350;
-    height: 15px;
-    align-items: center;
-    
+  list-style-type: none;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: #037741;
+  font-weight: 350;
+  height: 15px;
+  align-items: center;
 }
-.list-container :hover{
-    color:white;
-
+.list-container :hover {
+  color: white;
 }
 
-.header{
-    background-color: #f1c6e5;
-    font-family: 'Source Sans Pro Topnav', sans-serif;
-    
-    
+.header {
+  background-color: #f1c6e5;
+  font-family: "Source Sans Pro Topnav", sans-serif;
 }
-.footer{
-    position:absolute;
-    bottom: 0;
-    width: 100%;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-.addEmployee{
-    width: 100%;
+.addEmployee {
+  width: 100%;
 }
-.edit-Image, .delete-icon{
-    cursor: pointer;
+.edit-Image,
+.delete-icon {
+  cursor: pointer;
+}
+
+.main-container , .add-main-container {
+  border-radius: 10px;
+  background-color: white;
+  padding: 50px;
+}
+.add-container,.edit-container{
+    border-radius: 10px;
+    background-color: white;
+}
+body {
+  background-color: #e2eef1;
 }

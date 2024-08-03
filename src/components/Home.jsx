@@ -45,8 +45,8 @@ function Home() {
   
 
   return (
-    <div className="container d-flex mt-5 flex-column gap-4">
-      <div className="text-center label-header">Employee Information</div>
+    <div className="container d-flex mt-5 flex-column gap-4 main-container">
+      <div className="text-center label-header"><label className="container-label">Employee Information</label></div>
       <div>
         <button className="btn btn-primary" onClick={() => navigate("/add")}>
           Add Employee

@@ -47,12 +47,10 @@ const AddEmployee = () => {
 
   const handleCountryChange = (selectedOption) => {
     setCountry(selectedOption);
-    // Load states based on selected country if needed
   };
 
   const handleStateChange = (selectedOption) => {
     setState(selectedOption);
-    // Load districts based on selected state if needed
   };
 
   const handleDistrictChange = (selectedOption) => {
@@ -92,19 +90,17 @@ const AddEmployee = () => {
         window.history.back();
         console.log("data stored");
       });
-    }else{
-        // wrong input from user then display this alert message.
-        alert("Please enter valid Input");
+    } else {
+      // wrong input from user then display this alert message.
+      alert("Please enter valid Input");
     }
   };
 
   return (
-    <div className="container mt-5 d-flex justify-content-center">
-      <div className="col-6 d-flex flex-column gap-3 border p-5 rounded-4">
-        <div>
-          <label htmlFor="" className="bg-primary rounded p-2 addEmployee">
-            Add Empployee
-          </label>
+    <div className="container my-4 d-flex justify-content-center ">
+      <div className="col-12 col-md-6 d-flex flex-column gap-3  p-5 rounded-4 add-container">
+        <div className="text-center label-header">
+          <label className="container-label my-2">Add Empployee</label>
         </div>
         <div className="form-floating">
           <input
@@ -169,7 +165,7 @@ const AddEmployee = () => {
               submitData(e);
             }}
           >
-            Submit
+            Add Employee
           </button>
           <button
             className="btn btn-danger"
