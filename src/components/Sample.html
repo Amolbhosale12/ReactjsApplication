@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Filter</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Filter</h1>
+    <label for="employeeId">Enter Employee ID:</label>
+    <input type="text" id="employeeId" onchange="filterData()">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+            <!-- Employee data will be displayed here -->
+        </tbody>
+    </table>
+
+    <script>
+        const employees = [
+            { id: '1', name: 'John Doe', department: 'HR' },
+            { id: '2', name: 'Jane Smith', department: 'Finance' },
+            { id: '3', name: 'Emily Davis', department: 'IT' },
+            // Add more employee data as needed
+        ];
+
+        function filterData() {
+            const input = document.getElementById('employeeId').value;
+            const filteredEmployees = employees.filter(employee => employee.id === input);
+            const tableBody = document.getElementById('employeeTableBody');
+            tableBody.innerHTML = '';
+
+            filteredEmployees.forEach(employee => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${employee.id}</td>
+                    <td>${employee.name}</td>
+                    <td>${employee.department}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>

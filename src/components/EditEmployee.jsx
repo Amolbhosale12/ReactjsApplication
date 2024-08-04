@@ -114,7 +114,7 @@ const EditEmployee = () => {
         return res.json();
       })
       .then((data) => {
-        //alert(data.country);
+        // alert("country :"+data.country);
         setId(data.id);
         setName(data.name);
         setMobileNumber(data.mobile);
@@ -122,6 +122,7 @@ const EditEmployee = () => {
         setCountry(data.country);
         setState(data.state);
         setDistrict(data.district);
+        // alert(country);
       });
   }, []);
 
